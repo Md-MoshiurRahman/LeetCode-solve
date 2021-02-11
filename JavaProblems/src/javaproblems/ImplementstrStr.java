@@ -7,7 +7,12 @@ package javaproblems;
 
 class Solution {
     public int strStr(String haystack, String needle) {
-        return 2;
+        if(needle.equals(""))
+        {
+            return 0;
+        }
+        int index = haystack.indexOf(needle);
+        return index;
     }
 }
 
